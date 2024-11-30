@@ -1,0 +1,31 @@
+data:
+  random_seed: 42
+  n_customers: 1000
+  date_range:
+    start: "2023-01-01"
+    end: "2024-01-01"
+
+segmentation:
+  n_clusters: 4
+  random_state: 42
+  scaling: True
+
+clv_calculation:
+  time_period: 12  # months
+  discount_rate: 0.01
+  penalizer_coef: 0.0
+
+visualization:
+  figure_size: [12, 8]
+  style: "seaborn"
+  color_palette: "YlOrRd"
+  dpi: 300
+
+paths:
+  data_dir: "data"
+  reports_dir: "reports"
+  figures_dir: "reports/figures"
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
